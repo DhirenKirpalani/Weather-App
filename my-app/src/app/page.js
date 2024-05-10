@@ -55,7 +55,7 @@ export default function Home() {
         setTimeout(() => {
         setData(response.data);
         setLoading(false)
-        }, 1000)
+        }, 1500)
       } catch (error) {
         toast.error(`${error.response.data.message}`)
         setLoading(false)

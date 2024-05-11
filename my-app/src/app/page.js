@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import {IoMdSunny, IoMdCloudy, IoMdRainy, IoMdSnow, IoMdThunderstorm, IoMdSearch} from 'react-icons/io';
-import { BsCloudHaze2Fill, BsCloudDrizzleFill, BsEye, BsWater, BsThermometer, BsWind } from 'react-icons/bs';
+import { BsCloudHaze2Fill, BsCloudDrizzleFill, BsEye, BsWater, BsThermometer, BsWind, BsCloudFog } from 'react-icons/bs';
 import { TbTemperatureCelsius } from 'react-icons/tb';
 import { ImSpinner8 } from 'react-icons/im';
 import toast, { Toaster } from 'react-hot-toast';
@@ -101,6 +101,9 @@ export default function Home() {
       break;
       case "Thunderstorm":
       icon = <IoMdThunderstorm />
+      break;
+      case "Fog":
+      icon = <BsCloudFog />
       break;
   
     default:

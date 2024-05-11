@@ -52,10 +52,10 @@ export default function Home() {
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`);
         console.log(response.data)
         
-        setTimeout(() => {
+        
         setData(response.data);
         setLoading(false)
-        }, 1500)
+       
       } catch (error) {
         toast.error(`${error.response.data.message}`)
         setLoading(false)
